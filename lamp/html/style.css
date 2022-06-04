@@ -1,0 +1,126 @@
+.Judul {
+    padding: 20px;
+    background-color: #222831;
+    color: white;
+}
+
+.active {
+    margin-left: 10px;
+    border: 2px solid #00adb5;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    opacity: 80%;
+}
+
+.isi-home {
+    margin-top: 150px;
+    margin-bottom: 250px;
+}
+
+.footer {
+    background-color: #222831;
+    color: white;
+    padding: 10px;
+    bottom: 0;
+    text-align: center;
+}
+
+.logout {
+    position: absolute;
+    right: 20px;
+    background-color: #88304e;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5%;
+}
+
+
+/*login*/
+.container {
+    padding-right: 460px;
+    padding-left: 460px;
+}
+
+/*inventaris*/
+
+#tombol {
+    margin-left: 10px;
+    background-color: #00adb5;
+    color: white;
+    border: none;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5%;
+}
+
+.tabel {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border: 2px solid #222831;
+    min-width: 925px;
+}
+
+#total {
+    margin-left: 570px;
+    margin-right: 570px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border: 2px solid #00adb5;
+    min-width: 200px;
+}
+
+#title {
+    background-color: #393e46;
+    color: white;
+    width: 500px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding: 5px;
+}
+
+.form {
+    width: 700px;
+    padding: 20px;
+    border-radius: 3px;
+    border: 1px solid #222831;
+}
+
+.formProses {
+    width: 380px;
+    margin-left: 30px;
+}
+
+.form-check {
+    margin-left: 30px;
+}
+
+#tombol-tambah {
+    background-color: #00adb5;
+    ;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5%;
+}
+
+b {
+    color: blue;
+}
+
+.back {
+    text-decoration: none;
+    color: #00adb5;
+    border: 2px solid #00adb5;
+    padding: 20px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}

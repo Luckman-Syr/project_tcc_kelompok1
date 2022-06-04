@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Daftar Karyawan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        
+    </script>
+</head>
+
+<body id="body">
+
+    <div class="Judul">
+        <center>
+            <h1>Pusat Data Karyawan</h1>
+            <h1>Kantor Subur Makmur</h1>
+        </center>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Daftar Karyawan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <br><br>
+        <h1 style="margin-left: 30px;">Daftar Karyawan</h1>
+        <hr>
+
+        <div class="tabel">
+            <table class="table" style="text-align: center;">
+                <thead>
+                    <tr style="background-color: #393e46; color: white;">
+                        <th scope="col">No</th>
+                        <th scope="col">Kode/ID</th>
+                        <th scope="col">Nama</th>
+                        <th scope="col">No.Telepon</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Tgl Lahir</th>
+                        <th scope="col">Alamat</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Gaji</th>
+                        <th scope="col">Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="karyawanBody">
+                    
+                </tbody>
+            </table>
+        </div><br>
+        <hr>
+        <div>
+            <center>
+                <h1>Tambah Data Karyawan</h1>
+            </center>
+        </div>
+        <hr>
+        <div class="form mx-auto">
+
+            <form id="form" autocomplete="off" action="" method="post" enctype="multipart/form-data">
+
+                <div class="row">
+                    <div class="col-4">Kode/ID</div>
+                    <div class="col-6"><input required class="form-control formProses" type=text id="kode_id" name=kode_id
+                            maxlength="10" placeholder="Kode ID" ><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">Nama</div>
+                    <div class="col-6"><input required class="form-control formProses" id="nama" placeholder="Nama Legkap"
+                            type=text name=nama maxlength="50"></div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col-4">Nomor Telepon</div>
+                    <div class="col-6"><input required class="form-control formProses" id="no_tlp" type=text
+                            placeholder="089123789123" name=no_tlp maxlength="13"></div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col-4">Email</div>
+                    <div class="col-6"><input required class="form-control formProses" id="email" type=text
+                            placeholder="Example@gmail.com" name=email maxlength="30"></div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col-4">Tanggal Lahir [YYYY/MM/DD]</div>
+                    <div class="col-6"><input required class="form-control formProses" id="tgl_lahir" placeholder="YYYY/MM/DD"
+                            type=text name=tgl_lahir maxlength="30"></div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col-4">Alamat</div>
+                    <div class="col-6"><input required class="form-control formProses" id="alamat" type=text placeholder="Alamat"
+                            name=alamat maxlength="50"></div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col-4">Status</div>
+                    <div class="col-7">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="status" id="status" value="Tetap">
+                            <label class="form-check-label" for="inlineRadio1">Tetap</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="status" id="status" value="Kontrak"
+                                checked>
+                            <label class="form-check-label" for="inlineRadio2">Kontrak</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="status" id="status"
+                                value="Pensiun">
+                            <label class="form-check-label" for="inlineRadio3">Pensiun</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="status" id="status" value="PHK">
+                            <label class="form-check-label" for="inlineRadio4">PHK</label>
+                        </div>
+                    </div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col-4">Gaji</div>
+                    <div class="col-6"><input required class="form-control formProses" placeholder="1000000" id="gaji" type=text
+                            name=gaji maxlength="30"></div><br><br>
+                </div>
+                <br><br>
+                <div>
+                    <center>
+                        <input id="tombol-tambah" type=button value="Proses" name="submit" onclick="cek()">
+                        <a id="tombol-tambah" href=""
+                            style="margin-left: 30px;text-decoration: none; background-color: #fc5185;">Batal</a>
+                    </center>
+                </div>
+            </form>
+
+        </div>
+
+        <br>
+    </div>
+    <div class="footer">
+        Kantor Serba Ada
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
